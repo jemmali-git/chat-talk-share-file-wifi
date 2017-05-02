@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@android:color/white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@null"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/current_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:paddingLeft="3dp">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_talk_with"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/destination_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="receiver"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <ImageButton
+                android:id="@+id/video_call"
+                android:src="@drawable/ic_cam_call"
+                android:text="VIDEO"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageButton
+                android:id="@+id/audio_call"
+                android:src="@drawable/ic_call"
+                android:text="CALL"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageButton
+                android:id="@+id/pick_file"
+                android:src="@drawable/ic_add_file"
+                android:text="FILE"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/file_path_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <ListView
+            android:id="@+id/scroll_message"
+            android:layout_width="match_parent"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
+            android:layout_marginBottom="20dp">
+
+        </ListView>
+
+        <include
+            layout="@layout/type_message_area"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:gravity="bottom" />
+
+    </LinearLayout>
+
+</LinearLayout>

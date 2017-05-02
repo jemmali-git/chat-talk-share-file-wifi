@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/name_of_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="name"
+        android:textSize="30sp" />
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:layout_margin="30dp">
+        <TextView
+            android:id="@+id/message_to_dispaly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="message"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            android:maxLines="10" />
+    </ScrollView>
+    <ImageButton
+        android:id="@+id/vu"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_message_vu"
+        android:text="VU"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"/>
+</LinearLayout>

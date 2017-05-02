@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="setting"
+        android:icon="@drawable/ic_action_menu"
+        app:showAsAction="always" >
+
+        <menu>
+            <item
+                android:id="@+id/edit_name"
+                android:orderInCategory="100"
+                android:title="edit name"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/exit"
+                android:orderInCategory="100"
+                android:title="exit"
+                app:showAsAction="never" />
+
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/delete_option"
+        android:icon="@drawable/ic_action_delete"
+        android:title="delete"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/save_data"
+        android:icon="@drawable/ic_action_save"
+        android:title="save"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="refresh"
+        app:showAsAction="always"
+        />
+
+</menu>
+

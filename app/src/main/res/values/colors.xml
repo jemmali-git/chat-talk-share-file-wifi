@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E54B1F</color>
+    <color name="colorPrimaryDark">#E54B1F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFF</color>
+    <color name="black">#000</color>
+    <color name="grey">#dddddd</color>
+    <color name="end_call_color">#FF4081</color>
+    <color name="accept_call_color">#00C853</color>
+    <color name="reject_call_color">#B71C1C</color>
+</resources>
